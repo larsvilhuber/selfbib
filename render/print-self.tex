@@ -1,0 +1,34 @@
+% $Id: print-bib.tex 73 2006-03-07 16:41:18Z vilhu001 $
+% $URL: http://repository.ciser.cornell.edu/private/proposals/general/print-bib.tex $
+\documentclass[12pt,letterpaper]{article}
+\newcommand{\mytitle}{Bibliography \today}
+
+\usepackage{fullpage}
+%\usepackage{chicago}
+\usepackage[%
+plainpages,%
+colorlinks,%
+urlcolor=blue,%
+filecolor=blue,%
+pdftitle={\mytitle},%
+pdfpagemode=UseOutlines,%
+pdfauthor={Lars Vilhuber},%
+pdfsubject={Bibliography},%
+]{hyperref}
+\usepackage{natbib}
+%\usepackage{harvard}
+
+
+\begin{document}
+\section{\mytitle}
+\nocite{*}
+\bibliography{abbrev,self}
+\bibliographystyle{abbrvnat}
+%\bibliographystyle{chicagoa}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
