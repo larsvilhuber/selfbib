@@ -1,30 +1,91 @@
 % $Id: print-bib.tex 73 2006-03-07 16:41:18Z vilhu001 $
 % $URL: http://repository.ciser.cornell.edu/private/proposals/general/print-bib.tex $
-\documentclass[12pt,letterpaper]{article}
-\newcommand{\mytitle}{Bibliography \today}
+% !TeX TXS-program:bibliography = txs:///biber
 
+\documentclass{article}
+	\newcommand{\mytitle}{Bibliography \today}
 \usepackage{fullpage}
-%\usepackage{chicago}
+\usepackage[utf8]{inputenc}
+\usepackage{etoolbox}
+% ======== SET THIS FLAG to indicate whether to use a local or remote bib file
+\newtoggle{local}
+%\togglefalse{local}
+\toggletrue{local}
+
 \usepackage[%
 plainpages,%
 colorlinks,%
-urlcolor=blue,%
-filecolor=blue,%
-pdftitle={\mytitle},%
+citecolor=blue,%
+urlcolor=black,%
+filecolor=black,%
+linkcolor=blue,%
 pdfpagemode=UseOutlines,%
 pdfauthor={Lars Vilhuber},%
 pdfsubject={Bibliography},%
 ]{hyperref}
-\usepackage{natbib}
-%\usepackage{harvard}
+%\usepackage[citestyle=authoryear,maxnames=10,backend=biber]{biblatex}
+\usepackage[style=chicago-authordate,sorting=ydnt,maxnames=10,backend=biber]{biblatex}
 
+%\nocite{*}
+\author{Lars Vilhuber }
+\date{\today}
+
+
+\iftoggle{local}{
+	\addbibresource{../web/bib/self.bib}
+	\addbibresource{../web/bib/self.bib}
+	\title{Bibliography}
+}%else
+{
+	\addbibresource[location=remote]{https://www.vilhuber.com/lars/wp-content/papercite-data/bib/self.bib}
+	%\addbibresource[location=remote]{https://www2.vrdc.cornell.edu/news/wp-content/papercite-data/bib/synlbd-data.bib}
+	%\addbibresource[location=remote]{https://www2.vrdc.cornell.edu/news/wp-content/papercite-data/bib/synlbd-documents.bib}
+	\title{\mytitle}
+}
+\nocite{*}
 
 \begin{document}
-\section{\mytitle}
-\nocite{*}
-\bibliography{abbrev,../web/bib/self}
-\bibliographystyle{abbrvnat}
-%\bibliographystyle{chicagoa}
+	\maketitle
+
+\tableofcontents	
+
+%	\begin{quote}
+%		\footnotesize
+%		This bibliography can be easily recreated by cloning our git repository at \url{https://github.com/ncrncornell/sdsbib}.
+%		\iftoggle{local}{This version was created from the BIB file in the repository as of \today. A flag can be set in the preamble of this TEX file to download a remote copy from}{The bibliographic database was downloaded on \today\  directly from} \url{https://www2.vrdc.cornell.edu/news/wp-content/papercite-data/bib/ssb-data.bib} (other locations in the \LaTeX\  source code).
+%		\iftoggle{local}{}{A flag can be set in the preamble of this TEX file to use the local checked out version in the git repository.}
+%		
+%	\end{quote}
+	
+\defbibfilter{papers}{
+	type=article or
+	type=inproceedings or
+	type=conference or
+	type=proceedings or
+	type=incollection or 
+	type=inbook
+}
+
+\defbibfilter{crossref}{
+	type=book
+}
+	
+	\printbibliography[filter=papers,title={Articles},heading=bibnumbered]
+	\printbibliography[type=report,title={Preprints, Working papers, and Data},heading=bibnumbered]
+	\printbibliography[type=online,title={Online},heading=bibnumbered]
+	\printbibliography[nottype=report,%
+	nottype=article,%
+	nottype=inproceedings,%
+	nottype=incollection,%
+	nottype=conference,%
+	nottype=proceedings,%
+	nottype=inbook,%
+	nottype=book,%
+	nottype=online,
+	title={Other publications},heading=bibnumbered]
+	
+	\printbibliography[filter=crossref,title={Referenced Works},heading=bibnumbered]
+
 
 \end{document}
 
