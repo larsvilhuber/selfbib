@@ -17,19 +17,20 @@
 \definecolor{myred}{rgb}{1 .1 0}
 \definecolor{myblue}{rgb}{0,.1,1}
 \usepackage{fullpage}
-\usepackage[ %
-plainpages,%
-colorlinks,%
-linkcolor=blue,
-urlcolor=blue,
-filecolor=blue,
-citecolor=blue,
-pdftitle={\mytitle},%
-pdfpagemode=None,%UseOutlines
-pdfauthor={\mytitle},%
-pdfsubject={Curriculum Vitae}%
-]{hyperref}
-
+\usepackage{hyperref}
+\hypersetup{ %
+	plainpages,%
+	colorlinks,%
+	linkcolor=blue,
+	urlcolor=blue,
+	filecolor=blue,
+	citecolor=blue,
+	breaklinks,
+	pdftitle={\mytitle},%
+	pdfpagemode=None,%UseOutlines
+	pdfauthor={\mytitle},%
+	pdfsubject={Curriculum Vitae}%
+}
 \usepackage{newcent}
 \usepackage{longtable}
 %\usepackage{t1enc}
@@ -40,7 +41,7 @@ pdfsubject={Curriculum Vitae}%
 \usepackage[backend=biber,sortcites,sorting=ydnt]{biblatex-chicago}
 %\addbibresource{../../../Textes/Papers/Bib/abbrev.bib}
 
-\addbibresource{self/web/bib/self.bib}
+\addbibresource{self.bib}
 %\addbibresource[location=remote]{http://www.vilhuber.com/lars/wp-content/papercite-data/bib/self.bib}
 
 % % % % % % % % Layout
@@ -75,16 +76,14 @@ pdfsubject={Curriculum Vitae}%
 %&  Economist. \\
 %\\
 \multicolumn{2}{l}{\it \bf Contact:}\\
-%& 6900 rue Fabre\\
-%& Montr\'eal QC H2G 2Z6\\
-%& CANADA\\
 &  
 \begin{tabular}{lp{4in}}
 Email: &\href{mailto:lars.vilhuber@cornell.edu}{lars.vilhuber@cornell.edu}\\
 Phone: &607-330-5743\\
-Web page:&  \href{http://www.vilhuber.com/lars/}{http://www.vilhuber.com/lars/}\\
+Web page:&  \url{https://www.vilhuber.com/lars/}\\
 RePEc ID:& \href{https://ideas.repec.org/e/pvi26.html}{pvi26}\\
-ORCID ID:& \href{http://orcid.org/0000-0001-5733-8932}{0000-0001-5733-8932}\\
+ORCID ID:& \href{https://orcid.org/0000-0001-5733-8932}{0000-0001-5733-8932}\\
+Github   & \url{https://github.com/larsvilhuber}\\
 \end{tabular}
 \\
 %\multicolumn{2}{l}{\it \bf Citizenship :}\\
@@ -259,10 +258,6 @@ In addition to the list below, the
 \begin{enumerate}
 \item Alfred P. Sloan Foundation: ``The Economics of Socially-Efficient Privacy and Confidentiality Management for Statistical Agencies'', co-Principal Investigator, with John Abowd (PI), Ian Schmutte (University of Georgia, co-PI) (G‐2015‐13903) \$535,970.00.
 
-\item National Science Foundation: ``RCN: Coordination of the NSF-Census Research Network'', 
-Principal Investigator, with Alan Karr (NISS, co-PI and former PI), John Abowd (co-PI), and 
-Jerome Reiter (Duke, 
-co-PI) (NSF \href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1237602}{SES-1237602}) \$748,577.00
 
 \item National Science Foundation: ``NCRN-MN: Cornell Census-NSF Research Node: Integrated Research Support, Training and Data Documentation'', co-Principal Investigator, with John Abowd (PI), William Block (co-PI), Ping Li (co-PI) (NSF \href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1131848}{SES-1131848}) \$2,999,614.00
 \end{enumerate}
@@ -270,6 +265,11 @@ co-PI) (NSF \href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=123760
 
 \subparagraph{Completed grant work}
 \begin{enumerate}
+\item National Science Foundation: ``RCN: Coordination of the NSF-Census Research Network'', 
+Principal Investigator, with Alan Karr (NISS, co-PI and former PI), John Abowd (co-PI), and 
+Jerome Reiter (Duke, 
+co-PI) (NSF \href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1237602}{SES-1237602}) \$748,577.00
+
 \item National Science Foundation: ``Synthetic Data User Testing and Dissemination,'' Principal Investigator, joint with John Abowd. (NSF \href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1042181}{SES-1042181}) \$193,693.00.
 
 \item National Science Foundation: ``Joint NSF-Census-IRS Workshop on
@@ -310,8 +310,9 @@ Principal Investigator,  joint with John Abowd (NSF \href{http://www.nsf.gov/awa
 \paragraph{\it \bf Appointments and other activities :}%\\
 \subparagraph{Editorial activities}
 \begin{enumerate}
-	\item Managing Editor of the Journal of Privacy and Confidentiality (\url{http://www.journalprivacyconfidentiality.org})
-	\item Data Editor for the American Economic Association (\url{https://aeaweb.org})
+	\item Managing Editor of the Journal of Privacy and Confidentiality, 2017-\newline (\url{http://www.journalprivacyconfidentiality.org})
+	\item Data Editor for the American Economic Association, 2018- \newline (\url{https://aeaweb.org})
+	\item LEHD Technical Papers, 2000-2007 \newline (\url{https://ideas.repec.org/s/cen/tpaper.html})
 \end{enumerate}
 %\begin{enumerate}
 \subparagraph{ Referee for:}
@@ -332,15 +333,18 @@ Principal Investigator,  joint with John Abowd (NSF \href{http://www.nsf.gov/awa
   Review of Economics and Statistics,
   Sloan Foundation,
   Statistics Canada,
-\subparagraph{Committees} 
+\subparagraph{Committees and Panels} 
 \begin{itemize}
-\item American Statistical Association, Committee on Privacy and Confidentiality \url{http://community.amstat.org/cpc/home}
+\item American Statistical Association, Committee on Privacy and Confidentiality, member 2016- \url{http://community.amstat.org/cpc/home}
+\item Social Sciences and Humanities Research Council of Canada (SSHRC), Adjudication Committee for Partnership Grants, member 2018-.
 \item Comit\'e scientifique du Centre d'acc\`es s\'ecuris\'e aux 
-donn\'ees (CASD, \url{https://casd.eu/}) [Scientific advisory board of the Center for secure data 
-access, France]
+donn\'ees (CASD), member 2012-2014, chair 2014- (\url{https://casd.eu/}) [Scientific advisory board of the Center for secure data 
+access, France].
 \item Conseil d'orientation du Centre interuniversitaire 
 qu\'eb\'ecois de statistiques sociales (CIQSS)/ Advisory board of the Quebec Inter-University 
-Centre for Social Statistics (QICSS) [Canada]
+Centre for Social Statistics (QICSS) [Canada], member, 2014-.
+\item National Science Foundation, Methodology, Measurement, and Statistics (MMS) Advisory Panel, member 2016-2018.
+\item International Data Service Centre, IZA Institute of Labor Economics, Advisory Board, member 2016.
 \end{itemize}
 %\end{enumerate}
 
@@ -376,24 +380,9 @@ German, English, French, Portuguese, Spanish.
 %\begin{enumerate}
 %\item John M. ABOWD, Cornell University, Ithaca, NY, USA, \\
 %   \href{mailto:john_abowd@cornell.edu}{john\_abowd@cornell.edu}, +1.607.255.4801
-%\item Audra BOWLUS, University of Western Ontario, London, ON, Canada, \\
-%   \href{mailto:abowlus@uwo.ca}{abowlus@uwo.ca}, +1.519.661.2111 ext. 85359
-%\item  Thomas CROSSLEY, McMaster University, Hamilton, ON, Canada,\\
-%   \href{mailto:crossle@mcmaster.ca}{crossle@mcmaster.ca}, +1.905.525.9140
-%\item Julia I. LANE, Urban Institute, Washington, DC, USA, \\
-%   \href{mailto:jlane@ui.urban.org}{jlane@ui.urban.org}, +1.202.261.5797
-%\item  Thomas LEMIEUX, University of British Columbia, Vancouver, BC, Canada,\\ 
-%   \href{mailto:tlemieux@interchange.ubc.ca}{tlemieux@interchange.ubc.ca},
-%   +1.604.822.6763
-%\item David N. MARGOLIS, TEAM-Universit\'e Paris I , Paris, France, \\
-%   \href{mailto:margolis@univ-paris1.fr}{margolis@univ-paris1.fr}, +33.1.44.07.82.62
 % \end{enumerate}
 
-{\tiny
-\begin{verbatim}
-$Id: cv-vilhuber.tex 2918 2018-03-03 21:58:22Z lv39 $
-\end{verbatim}
-}
+
 
  \end{document}
 

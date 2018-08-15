@@ -8,3 +8,11 @@ web/pdf/vilhuber-biblio-latest.log
 web/pdf/vilhuber-biblio-latest.out
 web/pdf/vilhuber-biblio-latest.run.xml
 web/pdf/vilhuber-biblio-latest.toc
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.out
+*.xml
+*.gz
