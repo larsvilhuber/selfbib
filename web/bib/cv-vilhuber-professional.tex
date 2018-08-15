@@ -1,0 +1,607 @@
+%%% -*- latex -*- 
+%%%
+%%% cv-vilhuber.tex
+%%% Time-stamp: <09/06/11 21:45:43 vilhuber>
+%%% $Id: cv-vilhuber-professional.tex 1018 2009-12-02 14:39:47Z vilhu001 $
+%%% $URL: https://forge.cornell.edu/svn/repos/proposals/general/cv-vilhuber-professional.tex $
+%%%
+%\ifx\pdfoutput\undefined % We're not running pdftex
+%\documentclass[dvips,10pt,letterpaper]{report}
+%\documentclass[latex2html,10pt,letterpaper]{report}
+%\else
+%\documentclass[pdftex,10pt,letterpaper]{report}
+%\fi
+\documentclass[10pt,letterpaper]{report}
+\newcommand{\mytitle}{Lars Vilhuber}
+\newcommand{\myversion}{\today}
+
+\usepackage{pstricks}
+\usepackage{color}
+\usepackage{fancyhdr}   % provides pagestyle fancy
+\newrgbcolor{myred}{1 .1 0}
+\definecolor{myblue}{rgb}{0,.2,1}
+\usepackage{fullpage}
+\usepackage[%4,%
+%bookmarks,%
+%bookmarksopen,%
+plainpages,%
+colorlinks,%
+urlcolor=blue,
+filecolor=blue,
+pdftitle={\mytitle},%
+pdfpagemode=None,%UseOutlines
+pdfauthor={\mytitle},%
+pdfsubject={Curriculum Vitae}%,%
+%pdfstartview=FitW,%
+%dvips%
+%latex2html%
+]{hyperref}
+
+\usepackage{newcent}
+\usepackage{longtable}
+%\usepackage{t1enc}
+\pagestyle{fancy}
+
+%\fancyhead[LO,RE]{{\small \it \myred Confidential - Title 13 protected}}
+%\fancyhead[LO,RE]{{\small \it \myred Confidential - Do not distribute}}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\setlength{\headsep}{18pt}
+\newcommand{\otherpages}{%
+\fancyhead[LO,RE]{{\small \it \myred Curriculum Vitae}}
+\fancyhead[RO,LE]{{\small \it \mytitle}}
+\fancyfoot[RO,LE]{Page \thepage }
+\fancyfoot[CO,CE]{\ \ }
+%\fancyfoot[RO,LE]
+%{\tiny Latest version at \href{http://www.cloutier-vilhuber.net/Lars/cv-vilhuber.pdf}{http://www.cloutier-vilhuber.net/Lars/cv-vilhuber.pdf}}
+}
+\otherpages
+%\pagestyle{myheadings}
+%\markboth{\myversion}{\mytitle}
+
+%\thispagestyle{empty} 
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+  \large \bf Lars VILHUBER\\
+  \large \bf \href{http://www.cloutier-vilhuber.net/Lars/cv-vilhuber.pdf}{CURRICULUM VITAE}\\
+\small Version: \myversion
+\end{center}
+
+
+\begin{longtable}{rp{5in}}
+%\ \ \ \ \ \ \ \\
+%\multicolumn{2}{l}{\it \bf Profession : }\\
+%&  Economist. \\
+%\\
+\multicolumn{2}{l}{\it \bf Contact:}\\
+%& 6900 rue Fabre\\
+%& Montr\'eal QC H2G 2Z6\\
+%& CANADA\\
+&  
+\begin{tabular}{p{1.5in}p{4.4in}}
+Email: &\href{mailto:lars.vilhuber@cornell.edu}{lars.vilhuber@cornell.edu}\\
+Phone: &607-330-5743\\
+Web page:&  \href{http://www.cloutier-vilhuber.net/Lars/}{http://www.cloutier-vilhuber.net/Lars/}\\
+\end{tabular}
+\\
+%\multicolumn{2}{l}{\it \bf Citizenship :}\\
+%& U.S. and German citizenship, Canadian permanent residency. \\
+%\\
+\multicolumn{2}{l}{\it \bf Research interests :}\\
+&  Effect of labor market conditions on remuneration; 
+%   training and mobility; 
+%   work sharing,  
+   labor market effects of displacement;
+   low wage labor market;
+   comparative labor market studies,
+   applied econometrics;
+   statistical editing technologies;
+   statistical name matching procedures;
+   data confidentiality.
+   \\
+%\\  
+\\
+\multicolumn{2}{l}{\it \bf Professional activities :}\\
+%&  
+%\begin{tabular}{p{1in}p{4.2in}}
+\multicolumn{2}{l}{\ \it Current}\\
+2007-    & Economist, Senior Research Associate 
+\href{http://www.ilr.cornell.edu}{ILR School} at Cornell University, Ithaca,
+NY, USA (Contact:
+\href{mailto:john_abowd@cornell.edu}{John M. Abowd})\\%[.3cm]
+         &Activities: research into statistical
+         disclosure limitation protocols; economic analysis of
+         longitudinally linked employer-employee household and workplace
+         data; presentation of academic research at professional
+         conferences; publication of academic research in peer-reviewed
+         journals and books; maintenance of and design of expansion of small-scale high-performance
+         research computing cluster running Linux on x86, x86\_64, and
+         Itanium hardware; design and implementation of small-scale
+         high-performance research computing cluster as an interface to
+         massive  high-performance compute clusters (NSF-funded TeraGrid);
+         responsability for managing over \$1m of research
+         funds. Supervision and lead of as well as participation in research teams composed of senior, junior economists
+         and Ph.D. graduate students, as well as cross-disciplinary
+         research teams.\\
+2007-    & Vice-President,
+\href{http://www.aces-research.com}{ACES-Research, LLC}, Ithaca,
+NY, USA\\%[.3cm]
+         &Activities: applied research into confidentiality protection for
+         individual-level data;  implementation of confidentiality
+         protection mechanisms; general economic consulting\\
+2004-    &Senior Research Associate (under IPA), \href{http://lehd.dsd.census.gov}{LEHD Program} at the
+\href{http://www.census.gov}{U.S. Census Bureau}, Washington D.C., USA (Contact:
+\href{mailto:jeremy.s.wu@census.gov}{Jeremy S. Wu})\\
+         &Activities: (IT) Development of computer infrastructure in support of
+         CMMI-compliant development environments; workflow design for
+         CMMI-compliant code development; design, planning, and
+         assistance in implementation of large-scale IT infrastructure in
+         support of statistical production and research systems (hardware:
+         Sun Sunfire servers, IBM, Egenera blades, generic x86 hardware,
+         SGI Itanium supercomputers;
+         OS: Solaris 8/9/10, multiple Linux distributions; storage: 100+ TB
+         from SGI, 3Par, Sun); supervision of and participation in migration of
+         research code into a standardized production environment (R\& D);
+         supervision of testing and evaluation of code changes in
+         standardized production environment; research into statistical
+         disclosure limitation protocols; economic analysis of
+         longitudinally linked employer-employee household and workplace
+         data; presentation of academic research at professional
+         conferences; publication of academic research in peer-reviewed
+         journals and books.\\[.3cm]
+%\end{tabular}
+
+%\begin{tabular}{p{1in}p{4.2in}}
+\multicolumn{2}{l}{\ \it Government}\\
+2001-2002    &Economist (Consultant), \href{http://lehd.dsd.census.gov}{LEHD Program} at the
+\href{http://www.census.gov}{U.S. Census Bureau}, Washington D.C., USA (Contact:
+\href{mailto:chester.e.bowie@census.gov}{Chet Bowie})\\%[.3cm]
+              &Activities: design and implementation of a robust statistical
+              production system, within tight budgets and timelines. The
+              system still produces the Quarterly Workforce Indicators
+              after a four-fold expansion in size with minimal expansion in
+              staff; supervision of professional programmers; design,
+              procurement, and supervision of implementation of over 50TB
+              of storage; consultation in the design and selection of a
+              state-of-the-art multi-processor high-performance computing
+              system (Sun Sunfire E12k, at the time one of the largest
+              computers at the Census Bureau).\\
+1999-2001    &Economist, U.S. Census Bureau, Longitudinal
+Employer-Household Dynamics (\href{http://lehd.dsd.census.gov}{LEHD})
+Program (Reference: Chet Bowie, now NORC)\\%[.3cm]
+             &Activities: design and implementation of components of a
+             statistical system; economic analysis of
+         longitudinally linked employer-employee household and workplace
+         data; presentation of academic research at professional
+         conferences; publication of academic research in peer-reviewed
+         journals\\
+1998-2000    &Economic consultant to
+\href{http://www.hrdc-drhc.gc.ca/}{Human Resources Development Canada}
+(Contact: Ging Wong)\\
+             &Activities: Evaluation of new survey questions with respect to
+             their relevance for economic policy evaluation.\\[.3cm]
+%           \end{tabular}
+           % 
+% Cornell
+%
+%\begin{tabular}{p{1in}p{4.2in}}
+\multicolumn{2}{l}{\ \it Cornell Institute for Social and Economic
+  Research (CISER), Cornell University, Ithaca, NY, USA}\\
+2004-2007    & Economist, Senior Research Associate 
+\href{http://www.ciser.cornell.edu}{CISER} at Cornell University, Ithaca,
+NY, USA (Contact:
+\href{mailto:john_abowd@cornell.edu}{John M. Abowd})\\%[.3cm]
+2001-2004    & Economist (Consultant), 
+\href{http://www.ciser.cornell.edu}{CISER} at Cornell University, Ithaca,
+NY, USA (Contact:
+\href{mailto:john_abowd@cornell.edu}{John M. Abowd})\\[.3cm]
+         &Activities: research into statistical
+         disclosure limitation protocols; economic analysis of
+         longitudinally linked employer-employee household and workplace
+         data; presentation of academic research at professional
+         conferences; publication of academic research in peer-reviewed
+         journals and books; maintenance of and design of expansion of small-scale high-performance
+         research computing cluster running Linux on x86 commodity
+         hardware; consultation in the development of a secure
+         restricted-access data center running Windows Server, now serving
+         several 100 researchers at Cornell and nationwide; design,
+         procurement, and implementation supervision of state-of-the-art
+         supercomputer (SGI Altix 3700bx2) and associated multi-terabyte
+         storage within budgetary and implementation constraints. The
+         supercomputer, together with an identically configured machine
+         procured later, are still the largest single-memory compute
+         servers at the Census Bureau.\\
+
+%\end{tabular}
+
+%\begin{tabular}{p{1in}p{4.2in}}
+\multicolumn{2}{l}{\ \it Dept. of Economics, York University, ON, Canada}\\
+1999-2002    &Adjunct Professor, \href{http://econ.yorku.ca}{York University}, Toronto, Canada\\
+1998-1999       &Research Fellow, co-responsible for COEP 1996 data administration and dissemination. \\
+
+Winter 1998     &Instructor, Econ 3210 ``Use of Economic Data''
+(Introductory Econometrics), at Department of Economics, York University. 
+%Evaluation available.
+\\%[.3cm]
+\multicolumn{2}{l}{\ \it Dept. of Economics, Universit\'e de Montr\'eal}\\
+
+Autumn 1997     &Instructor, ECN 3500 ``Labor Economics'' (undergraduate level, jointly
+with Thomas Lemieux), at 
+  \href{http://http://www.sceco.umontreal.ca/}{D\'epartement} 
+  \href{http://http://www.sceco.umontreal.ca/}{de Sciences \'Economiques}, Universit\'e de
+Montr\'eal. 
+%Evaluation available. 
+\\
+
+Autumn 1996     &Instructor, ECN 3500 ``Labor Economics'' (undergraduate level).
+%Evaluation available. 
+\\
+
+%1993-1997       &Research Assistant: Thomas Lemieux (1997), David Margolis (1995-1997),
+%Jacques Robert (1992-1995) and Leonard Dudley (1993), all Universit\'e de
+%Montr\'eal, and Michael Huberman, CIRANO, Montr\'eal, 1996. \\
+
+%1993-1996       &Various teaching assistantships, undergraduate and
+%graduate micro economics.\\
+%, ECN 2011, 2nd year undergrad micro, to Michel Poitevin\\
+%1994        &Teaching Assistant, ECN 6023, ``Ph.D. Micro'', to Yves Sprumont.\\
+%
+%1993        &Teaching Assistant, ECN 2012, 2nd year undergrad micro, to Jacques Robert\\
+%\\[.3cm]
+%\multicolumn{2}{l}{\ \it Other }\\
+%
+%1991-1992     &  InterNationes, Bonn (Germany)
+%Host to international journalists on official visits to
+%Germany, contracts to the German Foreign Office.\\
+%
+%
+%Summer 1991   &  BASF P \& E, S.A. (France)
+%Translator German to French of technical documents.\\
+%
+%
+%Summer 1991   &  Deutsche Bank AG, Ludwigshafen (Germany, 1986-1988):
+%Apprenticeship as bank clerk\\
+%\end{tabular}
+\\
+\end{longtable}
+%\newpage
+\otherpages
+%\multicolumn{2}{l}
+\paragraph{\it \bf Publications :}%\\
+\begin{enumerate}
+\item ``\href{http://www.vilhuber.com/lars/papers/index.php?ser_id=2&search=adjusting+imperfect&ssub=Go}{Adjusting imperfect data: Overview and case studies},'' \\
+      in {\it Wage Structure, Raises and Mobility: International
+      Comparisons of the Structure of Wages Within and Across Firms}, by 
+Edward P. Lazear and Kathryn L. Shaw (Editors),  The University of Chicago
+Press, 2009. (also NBER Working Paper No. 12977)
+\item
+  ``\href{http://www.vilhuber.com/lars/papers/index.php?year=&ser_id=2&search=firm+death&ssub=Go}{The link between human capital, mass layoffs, and firm deaths},'' joint with \href{mailto:john_abowd@cornell.edu}{John M. Abowd} (Cornell University \& U.S. Census Bureau), Kevin L. McKinney (U.S. Census Bureau),  in {\it Producer Dynamics: New Evidence from Micro Data}, by Timothy Dunne, J. Bradford Jensen, and Mark J. Roberts (Editors), 
+ The University of Chicago Press, 2009.
+\item
+  ``\href{http://www.vilhuber.com/lars/papers/index.php?year=&ser_id=2&search=LEHD&ssub=Go}{The LEHD Infrastructure Files and the Creation of the Quarterly Workforce Indicators},'' joint with John M. Abowd, Fredrik Andersson, Kevin L. McKinney, Marc Roemer, Bryce E. Stephens, and Simon Woodcock,  in {\it Producer Dynamics: New Evidence from Micro Data}, by Timothy Dunne, J. Bradford Jensen, and Mark J. Roberts (Editors), 
+ The University of Chicago Press, 2009.
+
+\item ``How Did Universal Primary Education Affect Returns to Education and
+  Labor Market Participation in Uganda'', joint with Lisa Dragoset, in
+  Marito Garcia and Jean Far\`es (eds.), {\it Youth in Africa's Labor
+    Market}, The World Bank, Washington DC., 2008.
+\item ``How Protective Are Synthetic Data'', joint with
+  John Abowd, {\it Privacy in Statistical Databases: Proceedings of the
+    UNESCO Chair in Data Privacy International Conference PSD2008},
+  Springer Lecture Notes in Computer Science, Vol. 5262, pgs. 239-246, September 2008.
+
+\item ``Procedural justice criteria in salary determination'', joint with
+  Julie Cloutier, {\it Journal of Managerial Psychology}, Vol. 23 (6),
+  August 2008.
+
+\item ``Privacy: Theory Meets Practice on the Map'', joint with Ashwin
+  Machanavajjhala, Daniel Kifer, John M. Abowd, and Johannes Gehrke, International Conference on Data Engineering (ICDE) 2008.
+\item ``\href{http://hermia.asa.catchword.org/vl=289536/cl=107/nw=1/rpsv/cw/asa/07350015/v23n2/s1/p133}{The Sensitivity of Economic Statistics to Coding Errors in Personal
+  Identifiers},'' joint with \\
+  \href{mailto:john_abowd@cornell.edu}{John M. Abowd} (Cornell University
+  \& U.S. Census Bureau), \\
+ {\it \href{http://www.amstat.org/publications/jbes/}{Journal of Business
+     and Economic Statistics}, April 2005, 23(2) .}.%\\[.25cm]
+\item ``\href{http://www.e-elgar.co.uk/action.lasso?-database=ElgarTitles.fp5&-layout=Website&-response=hitlist.html&-noresultserror=hitlist.html&CDM+Valid=Yes&-op=cn&-token.stype=Author%20names%20listing&bformat=&Author%20names%20listing=sofer&-maxrecords=10&-sortfield=Lead%20Title&-sortorder=ascending&-search}{Early Career Experiences and Later Career Outcomes: An
+  International}
+  \href{http://www.e-elgar.co.uk/action.lasso?-database=ElgarTitles.fp5&-layout=Website&-response=hitlist.html&-noresultserror=hitlist.html&CDM+Valid=Yes&-op=cn&-token.stype=Author%20names%20listing&bformat=&Author%20names%20listing=sofer&-maxrecords=10&-sortfield=Lead%20Title&-sortorder=ascending&-search}{ Comparison},'' joint with
+\href{mailto:margolis@univ-paris1.fr}{David N.Margolis}, Erik Plug and
+V\'eronique Simonnet, in: Catherine Sofer (ed.), {\it Human Capital Over The
+  Life Cycle -  A European Perspective} (London, Edward Elgar), 2004.%\\[.25cm]
+\item ``Escaping poverty for low-wage workers: The role of employer characteristics and changes,'' joint with
+\href{hholzer@ui.urban.org}{Harry Holzer} (Georgetown University \& Urban Institute), \href{mailto:jlane@ui.urban.org}{Julia Lane} (U.S. Census
+Bureau \& Urban Institute),\\
+ {\it \href{http://www.ilr.cornell.edu/ilrreview/}{Industrial and Labor
+     Relations Review}, July 2004, 57(4)}.%\\[.25cm]
+%\item
+%``\href{http://www.cirano.qc.ca/publication/cahier/resume/96s-28.html}{Wage
+%  Flexibility and Contract Structure in Germany},''\\
+% {\it  Labour  Economics, revise-and-resubmit 2002}.%\\[.25cm]
+\item ``Early Career Experiences and Later Career Outcomes: Comparing the
+United States, France and Germany,'' joint with David N. Margolis and
+V\'eronique Simonnet.\\
+{\it \href{http://www.diw.de/english/publikationen/vierteljahrshefte/jahrgang01/index.html}{Vierteljahresheft zur Wirtschaftsforschung}, 2001, Heft 1, pgs. 31-38}.%\\[.25cm]
+\item ``La sp\'ecificit\'e de la formation en milieu de travail : un survol des
+contributions th\'eoriques et empiriques r\'ecentes,'' \\
+{\it \href{http://www.hec.ca/iea/actueco/}{L'Actualit\'e  \'economique, Revue  d'analyse \'economique}, vol. 77, no. 1, March 2001}.%\\[.25cm]
+\item  ``Continuous Training and Sectoral Mobility in Germany, Evidence
+  from the 90s,''\\
+ {\it \href{http://www.diw.de/english/publikationen/vierteljahrshefte/jahrgang99/index.html}{Vierteljahresheft zur Wirtschaftsforschung}, 1999}.%\\[.25cm]
+\end{enumerate}
+
+%\multicolumn{2}{l}
+\paragraph{\it \bf Ongoing research and working papers:}%\\
+\begin{enumerate}
+%\item ``Privacy: Theory meets Practice on the Map,'' submitted to
+%  \href{http://www.icde2008.org/}{ICDE2008}, joint with Ashwin
+%  Machanavajjhala,  Daniel Kifer,  John Abowd, and  Johannes Gehrke
+
+%\item ``\href{http://www.nber.org/papers/w12977}{Adjusting imperfect data: Overview and Case studies},'' \\
+%      NBER Working Paper No. 12977
+\item ``Using linked employer-employee data to investigate the speed of
+  adjustment in downsizing firms,'' joint with Kevin L. McKinney (U.S. Census Bureau),\href{http://lehd.dsd.census.gov/led/library/techpapers_2006.html}{LEHD Technical Paper TP-2006-03}.%\\[.25cm]
+\item ``\href{http://http://www.vilhuber.com/lars/papers/index.php?year=2005&ser_id=2&search=multiplicative+noise&ssub=Go}{Confidentiality Protection in the Census Bureau's Quarterly Workforce
+  Indicator},'' joint with {John M. Abowd}
+  (Cornell University \& U.S. Census Bureau) and Bryce Stephens (University of
+  Maryland College Park); \href{http://lehd.dsd.census.gov/led/library/techpapers_2006.html}{LEHD Technical Paper TP-2006-02}.%\\[.25cm]
+%\item
+%  ``{The LEHD Infrastructure Files and the Creation of the Quarterly Workforce Indicators},'' joint with John M. Abowd, Fredrik Andersson, Kevin L. McKinney, Marc Roemer, Bryce E. Stephens, and Simon Woodcock,  \\
+%      \href{http://lehd.dsd.census.gov/led/library/techpapers_2006.html}{LEHD Technical Paper TP-2006-01}.%\\[.25cm]
+%\item ``\href{http://www.vilhuber.com/lars/papers/index.php?ser_id=2&search=adjusting+imperfect&ssub=Go}{Adjusting imperfect data: Overview and case studies},'' \\
+%      \href{http://lehd.dsd.census.gov/led/library/techpapers_2004.html}{LEHD Technical Paper TP-2004-05}.%\\[.25cm]
+\item ``The Creation of the Employment Dynamics Estimates,'' joint with
+  {John M. Abowd} (Cornell University
+  and U.S. Census Bureau) and {Paul
+    Lengermann} (Federal Reserve Board), \\
+\href{http://lehd.dsd.census.gov/led/library/techpapers_2003.html}{LEHD Technical Paper TP-2002-13}.%\\[.25cm]
+\item ``Displaced workers, early leavers, and re-employment wages,'' joint
+with \href{mailto:abowlus@uwo.ca}{Audra Bowlus} (University of Western
+Ontario), \href{http://lehd.dsd.census.gov/led/library/techpapers_2002.html}{LEHD Technical Paper TP-2002-18} (last revised November 2002).%\\[.25cm]
+\item ``Abandoning the sinking ship: The composition of worker flows prior to
+displacement,'' joint with \href{mailto:Paul.A.Lengermann@frb.gov}{Paul
+  Lengermann} (Federal Reserve Board), \href{http://lehd.dsd.census.gov/led/library/techpapers_2002.html}{LEHD Technical Paper TP-2002-11}.%\\[.25cm]
+\item ``\href{http://lamia02.univ-paris1.fr/WPs/Early Career Experiences and
+  Later Career Outcomes - A Comparison of the United States, France and
+  Germany.PDF}{Early Career Experiences and Later Career Outcomes: A
+  Comparison of the United States,}\\ 
+     \href{http://lamia02.univ-paris1.fr/WPs/Early Career Experiences and
+  Later Career Outcomes - A Comparison of the United States, France and
+  Germany.PDF}{France and Germany},'' Cahier de la MSE 2001.35, joint with
+\href{mailto:margolis@univ-paris1.fr}{David N. Margolis} and
+V\'eronique Simonnet. 
+%\\[.25cm]
+\item ``\href{http://lamia02.univ-paris1.fr/WPs/Early Career Experiences and Later Career Outcomes-An International Comparison.PDF}{Early Career Experiences and Later Career Outcomes: An
+  International}
+  \href{http://lamia02.univ-paris1.fr/WPs/Early Career Experiences and Later Career Outcomes-An International Comparison.PDF}{ Comparison},'' joint with
+\href{mailto:margolis@univ-paris1.fr}{David N.Margolis}, Erik Plug and V\'eronique Simonnet, STT Working Paper, February 1999.%\\[.25cm]
+\item
+``\href{http://www.cirano.qc.ca/en/publication_detail.php?id=99s-03}{Sector-specific Training and  Mobility in Germany},'' CIRANO WP~99s-03.%\\[.25cm]
+\item
+``\href{http://www.cirano.qc.ca/en/publication_detail.php?id=97s-42}{Sector-specific On-the-job Training: Evidence from U.S. Data},''  CIRANO WP~97s-42.%\\[.25cm]
+\item
+``\href{http://www.cirano.qc.ca/en/publication_detail.php?id=96s-28}{Wage
+  Flexibility and Contract Structure in Germany},'' CIRANO WP~96s-28.%\\[.25cm]
+\end{enumerate}
+%\newpage
+%\multicolumn{2}{l}
+%\paragraph{\it \bf Presentations :}%\\
+%\begin{enumerate}
+%\item ``Using linked employer-employee data to investigate the speed of
+%  adjustment in downsizing firms,'' joint with
+%  \href{mailto:john_abowd@cornell.edu}{John M. Abowd} (Cornell University
+%  \& U.S. Census Bureau), Kevin L. McKinney (U.S. Census Bureau), presented
+%  at
+%  \href{http://www.eea-esem2006.org/eea-esem2006/eea-esem-vienna/program-eea-esem/eea-esem.html}{ESEM 2006}, Vienna; \href{http://economics.ca/2006/programme.html}{CEA 2006}, Montreal.
+%\item ``Confidentiality Protection in the Census Bureau's Quarterly Workforce
+%  Indicator,'' joint with \href{mailto:john_abowd@cornell.edu}{John M. Abowd}
+%  (Cornell University \& U.S. Census Bureau) and Bryce Stephens (University of
+%  Maryland College Park), presented at the \href{http://www.amstat.org/meetings/jsm/2005/onlineprogram/index.cfm?fuseaction=activity_details&activityid=431&sessionid=200022}{Joint Statistical Meetings 2005}, Minneapolis, MN.
+%\item
+%  ``\href{http://www.vilhuber.com/lars/papers/index.php?year=&ser_id=2&search=firm+death&ssub=Go}{The link between human capital, mass layoffs, and firm deaths},'' joint with \href{mailto:john_abowd@cornell.edu}{John M. Abowd} (Cornell University \& U.S. Census Bureau), Kevin L. McKinney (U.S. Census Bureau), presented at the Conference on Research in Income and Wealth (CRIW) ``PRODUCER DYNAMICS: New Evidence from Micro Data'' (April 2005) 
+%\item
+%  ``\href{http://www.vilhuber.com/lars/papers/index.php?year=&ser_id=2&search=LEHD&ssub=Go}{The LEHD Infrastructure Files and the Creation of the Quarterly Workforce Indicators},'' presented at the Conference on Research in Income and Wealth (CRIW) ``PRODUCER DYNAMICS: New Evidence from Micro Data'' (April 2005) 
+%\item ``The Sensitivity of Economic Statistics to Coding Errors in Personal
+%  Identifiers.'' Presented at the 20$^{th}$
+%  \href{http://socserv.socsci.mcmaster.ca/cesg2003/}{Canadian Econometrics
+%    Study Group Conference} and at the 2004 \href{http://www.amstat.org/meetings/jsm/2004/onlineprogram/index.cfm?fuseaction=activity_details&sessionid=200151}{Joint Statistical
+%    Meetings} (JBES Invited Session).%\\[.25cm]
+%\item ``The Creation of the Employment Dynamics Estimates.'' Presented at
+%  the 2002 NBER Summer Institute, Workshop on \href{http://www.nber.org/~confer/2002/si2002/pplprg.html}{Empirical Personnel Economics}.%\\[.25cm]
+%\item ``Displaced workers, early leavers, and re-employment wages.''
+%  Presented in seminars at Universit\'e Laval, Qu\'ebec City (2001);
+%  Universit\'e de Sherbrooke (2001),
+%  McGill University, Montr\'eal (2002), University of Minnesota Industrial
+%  Relations Center (2002), \href{http://www.iir.berkeley.edu/cle}{UC at Berkeley} (2003)
+%;  \\
+%the \href{http://www.iza.org/de/calls_conferences/first_iza_sole_meeting}{2002 
+%  First IZA/SOLE Transatlantic Meeting of Labor Economists}, GERMANY,\\
+%  the 2002
+%  \href{http://www.diw.de/deutsch/abteilungen/ldm/archiv/ar2002/panel2002/panel2002.html}{10th International Conference on Panel Data}, Berlin, GERMANY,\\
+%  the 2002 \href{http://www.cesg2002.ecn.ulaval.ca/}{19th Canadian
+%  Econometrics Study Group Conference} (presented by Bowlus, both authors
+%  present),
+%and the \href{http://www.nber.org/~confer/2003/pers03/PERS03prg.html}{NBER 2003
+%  Personnel Economics Meeting}
+%%\\[.25cm] 
+%\item ``A test of search models using linked displaced worker data.''
+%Presented at the 2001 Canadian Economics Association (CEA) meetings at
+%McGill University, Montr\'eal, QC, Canada and at workshops at York University
+%and the Center for Economic Studies, U.S. Census Bureau.%\\[.25cm]
+%\item ``How do Firm Personnel Policies Affect Low Earnings Workers Evidence
+%from Longitudinal Matched U.S. Data''. Presented at the 2001 meetings of the
+%American Economic Association (AEA) in New Orleans, LA, USA, the 2001
+%Canadian Economics Association (CEA) meetings at
+%McGill University, Montr\'eal, QC, Canada, and workshops at Cornell University.%\\[.25cm]
+%\item ``Abandoning the sinking ship: The composition of worker flows prior to
+%displacement''. Presented at the 2000 Canadian Economics
+%Association (CEA) meetings at the University of British Columbia,
+%Vancouver, BC, Canada, the 2001 North American Summer Meetings of the
+%Econometric Society, University of Maryland, College Park,
+%MD, and workshops at Rutgers University and University of Maryland, College Park.%\\[.25cm]
+%\item ``Early Career Experiences and Later Career Outcomes: Comparing the
+%United States, France and Germany''. Presented at the 2000 Fourth International Conference
+%of the German Socio-Economic Panel Study Users, Berlin, Germany, and the
+%2000 Journ\'ees de micro\'economie appliqu\'ee at the Universit\'e Laval, Qu\'ebec,
+%QC, Canada.%\\[.25cm]
+%\item
+%``Sector-specific On-the-job Training: Evidence from U.S. Data''.  Presented at the CEA meetings, May 1998, University of Ottawa, Ottawa, Canada, and at  the North American Summer Meeting of the Econometric Society, June 1998, Montr\'eal,  Canada. %\\[.25cm]
+%\item
+%``Wage Flexibility and Contract Structure in Germany''.  Presented at the 1996 Journ\'ees Micro\'economiques \`a Li\`ege, Belgium, the 1996 Canadian  Economics Association (CEA) meetings at Brock University, St. Catherines, ON, and the  meetings of the Soci\'et\'e Canadienne de Sciences \'Economiques (SCSE), May 1997,  Montr\'eal, Canada.%\\[.25cm]
+%\end{enumerate}
+%\newpage
+%\multicolumn{2}{l}
+
+%\paragraph{\it \bf Comments on presentations : }%\\
+%%\item ``Title,'' by Author (Affiliation), presented at
+%%the Conference.%\\[.25cm]
+%\begin{enumerate}
+%\item ``The Effect of Full Health Insurance Portability on Job to Job
+%Mobility for Sick Individuals, 1996-1999,'' by Christopher Carpenter (UC
+%Berkeley, USA ), presented at the 2001 North American Summer
+%Meetings of the Econometric Society, University of Maryland, College Park, MD.%\\[.25cm]
+%\item ``The Impact of Employment Insurance Restructuring on The Distribution
+%of Work Hours,'' by Marina Adshade and Arthur Sweetman (Queen's University,
+%Kingston, Canada), presented at the 2001 Canadian Economics Association
+%(CEA) meetings at McGill University, Montr\'eal, QC, Canada..%\\[.25cm]
+%\item ``D\'ependance entre l'acc\`es \`a l'emploi et le d\'epart du domicile
+%parental, une application des mod\`eles de dur\'ee bivari\'es,'' by Sandrine
+%Dufour-Kippelen (THEMA, Universit\'e Paris X-Nanterre, France), presented at
+%the 2000 Journ\'ees de micro\'economie appliqu\'ee at the Universit\'e Laval,
+%Qu\'ebec, QC, Canada.%\\[.25cm]
+%\item ``Formation informelle et rendements de l'anciennet\'e,'' presented by
+%Guillaume Destr\'e (TEAM, Universit\'e Paris I, France), presented at the 2000
+%Journ\'ees de micro\'economie appliqu\'ee at the Universit\'e Laval,
+%Qu\'ebec, QC, Canada.%\\[.25cm]
+%\item ``The Impact of Social Capital and Workers' Attitudes Toward Job Search
+%on UI Receipt,'' by David Gray (University of Ottawa), presented at the
+%2000 Canadian Economics Association (CEA) meetings at the University of
+%British Columbia, Vancouver, BC, Canada.%\\[.25cm]
+%\item ``Oligopsony and the distribution of wages,'' presented by Ted To at
+%the 1999 Canadian Economics Association (CEA) meetings at the University of
+%Toronto, Toronto, ON, Canada.%\\[.25cm]
+%\item ``Regional youth employment patterns,'' presented by James Brox at the
+%1998 Canadian Economics Association (CEA) meetings at the University
+%of Ottawa, Ottawa, ON, Canada.%\\[.25cm]
+%\item ``Job Protection Laws and Jobs: Evidence from a Natural Experiment,''
+%presented by Marc Van Audenrode (Universit\'e Laval) at the 1998 North
+%American Summer Meetings of the Econometric Society in Montr\'eal, QC, Canada.%\\[.25cm]
+%\item ``Are Underground Workers more inclined to purchase goods and services
+%in the underground economy?,'' by Bernard Fortin, Guy Lacroix and Claude
+%Montmarquette,
+%presented at the SCSE meetings, May 1997, Montr\'eal, QC; %\\[.25cm]
+%\item ``The Determinants of Multiple Job Holdings: Evidence from Canada,'' by
+%Lisa M.  Powell, presented at the CEA meetings, June 1997, Memorial
+%University, St.John's, Nfld.,
+%Canada; %\\[.25cm]
+%\item ``La satisfaction dans l'emploi: une analyse empirique sur donn\'ees
+%russes et françaises,'' by Carole Galindo and Anne Pascal, presented at the
+%1996 Journ\'ees Micro\'economiques \`a
+%Li\`ege Belgium.%\\[.25cm]
+%\end{enumerate}
+
+%\multicolumn{2}{l}
+\paragraph{\it \bf Fellowships and Grants:}
+\begin{itemize}
+\item National Science Foundation (Washington, D.C.),  `` Social Science Gateway to TeraGrid''
+  as Principal Investigator, together with  John Abowd, Cornell
+  University.
+  \href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0922005}{Award \#0922005}. \$387,672 (pending)
+\item National Science Foundation (Washington, D.C.),  `` The economics of mass layoffs: displaced workers, displacing firms, and causes and consequences''
+  as Principal Investigator, together with  John Abowd, Cornell
+  University. \href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0820349}{Award \#0820349}.  \$245,950.
+\item National Science Foundation (Washington, D.C.),  ``Info
+  Tech Challenges for Secure Access to Confidential Social Science Data'',
+  awarded September 2004; as Senior Researcher. Principal Investigator is John Abowd, Cornell
+  University.   \href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0427889}{Award \#0427889}.
+\item Social Sciences and Humanities Research Council of Canada (SSHRC), Initiative
+  for the New Economy (INE), Collaborative Research Initiative, 2002,
+  ``Comment la nouvelle \'economie financi\`ere affecte la relation employeur-employ\'e'' (as Collaborator,
+  Principal Investigator is Georges Dionne, HEC, co-authoring Co-applicant
+  is Beno\^it Dostie). \href{http://www.hec.ca/gestiondesrisques/ine.PDF}{Approved}. 
+\item Social Sciences and Humanities Research Council of Canada (SSHRC), Initiative
+  for the New Economy (INE) Research Grant 2001, ``Labour market effects
+  surrounding worker displacement in Canada and the US: a search-theoretic
+  approach'' (as Principal Investigator. Co-applicant is Audra Bowlus,
+  collaborator is  David Margolis). Approved, but not funded.
+\item Best paper, 2000 Fourth International Conference
+  of the German Socio-Economic Panel Study Users, Berlin, Germany, for ``Early Career Experiences and Later Career Outcomes: Comparing the
+  United States, France and Germany''
+  \item CIRANO grants (1994, 1995, 1996)
+  \item Department of Economics, Universit\'e de Montr\'eal honors grant
+  (1993-1995) 
+  \item Studienstiftung des Deutschen Volkes (Germany, 1990-1995)
+  \end{itemize}
+
+\paragraph{\it \bf Appointments and other activities :}%\\
+%\begin{enumerate}
+\subparagraph{ Referee for:}
+  European Economic Review,  Economic Journal, Journal of Labor
+  Economics, Review of Development Economics, Journal of Business and Economic
+  Statistics, Econometric Reviews, Journal of Applied Economics, ACM
+  Transactions on Knowledge Discovery in Data.
+
+\subparagraph{Editorial activities}
+Associate editor of Journal of Privacy and Confidentiality
+%\end{enumerate}
+
+%\newpage
+  
+%\begin{longtable}{rp{5in}}
+%\ \ \ \ \ \ \ \\
+\paragraph{\it \bf Education :}
+\ \\
+\begin{tabular}{lp{4in}}
+\it Dissertation : \\
+\ Title :&``Trois essais sur la mobilit\'e et la formation des travailleurs en Allemagne et aux
+\'Etats-Unis'' (Three essays on worker mobility and worker training in
+Germany and the US)\\
+\ Supervisors : &\href{mailto:margolis@univ-paris1.fr}{David N. MARGOLIS} 
+                  and \href{mailto:tlemieux@interchange.ubc.ca}{Thomas LEMIEUX}\\
+\ Date : & December 1998\\
+\ Specialization : &Labor Economics, Applied Econometrics \\
+\\
+1993-1999   &    Universit\'e de Montr\'eal (Canada): Ph.D. in Economics. \\
+1992-1993   &    Universit\'e de Montr\'eal (Canada): M.Sc. in Economics, 1993 \\
+1991-1992   &    Universität Bonn (Germany): Graduate studies in Economics, partial exams towards Diplom.     \\
+1990-1991   &    Universität Bonn (Germany): Undergraduate studies in Economics, ``Vordiplom'' granted April 1991 \\
+1990-1991   &    FernUniversität Hagen (Germany): Undergraduate studies in Economics towards Vordiplom. \\
+\end{tabular}
+
+\paragraph{\it \bf Languages :}
+\ \\
+German, English, French, Portuguese, Spanish. 
+
+%\newpage
+%\paragraph{\it \bf References:}
+%\begin{enumerate}
+%\item John M. ABOWD, Cornell University, Ithaca, NY, USA, \\
+%   \href{mailto:john_abowd@cornell.edu}{john\_abowd@cornell.edu}, +1.607.255.4801
+%\item Audra BOWLUS, University of Western Ontario, London, ON, Canada, \\
+%   \href{mailto:abowlus@uwo.ca}{abowlus@uwo.ca}, +1.519.661.2111 ext. 85359
+%\item  Thomas CROSSLEY, McMaster University, Hamilton, ON, Canada,\\
+%   \href{mailto:crossle@mcmaster.ca}{crossle@mcmaster.ca}, +1.905.525.9140
+%\item Julia I. LANE, Urban Institute, Washington, DC, USA, \\
+%   \href{mailto:jlane@ui.urban.org}{jlane@ui.urban.org}, +1.202.261.5797
+%\item  Thomas LEMIEUX, University of British Columbia, Vancouver, BC, Canada,\\ 
+%   \href{mailto:tlemieux@interchange.ubc.ca}{tlemieux@interchange.ubc.ca},
+%   +1.604.822.6763
+%\item David N. MARGOLIS, TEAM-Universit\'e Paris I , Paris, France, \\
+%   \href{mailto:margolis@univ-paris1.fr}{margolis@univ-paris1.fr}, +33.1.44.07.82.62
+% \end{enumerate}
+
+{\tiny
+\begin{verbatim}
+$Id: cv-vilhuber-professional.tex 1018 2009-12-02 14:39:47Z vilhu001 $
+\end{verbatim}
+}
+
+ \end{document}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% TeX-master: t
+%%% End: 
