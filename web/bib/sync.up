@@ -1,1 +1,2 @@
-scp cv-vilhuber.pdf vilhuber10@bard.dreamhost.com:/home/vilhuber10/www.vilhuber.com/lars/wp-content/uploads/c/
+ssh vilhuber10@administrator.dreamhost.com "rm /home/vilhuber10/www.vilhuber.com/lars/wp-content/uploads/c/cv-vilhuber.pdf"
+scp cv-vilhuber.pdf vilhuber10@administrator.dreamhost.com:/home/vilhuber10/www.vilhuber.com/lars/wp-content/uploads/c/
