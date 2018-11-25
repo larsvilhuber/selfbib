@@ -1,4 +1,5 @@
 % !TeX TXS-program:bibliography = txs:///biber
+% !TeX program = xelatex
 % !BIB program = biber
 %%% -*- latex -*- 
 %%%
@@ -17,6 +18,11 @@
 %\documentclass[pdftex,10pt,letterpaper]{article}
 %\fi
 \documentclass[10pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+%\usepackage[american]{babel}
+\usepackage[T1]{fontenc}
+
 \newcommand{\mytitle}{Lars Vilhuber}
 \newcommand{\myversion}{\today}
 
@@ -52,11 +58,12 @@ pdfsubject={Curriculum Vitae}%,%
 %\usepackage{mathptmx}
 \renewcommand*\rmdefault{ppl}
 \usepackage{longtable}
-\usepackage[T1]{fontenc}
+%\usepackage[T1]{fontenc}
 %\usepackage{t1enc}
 
 % try out this package
 \usepackage[citestyle=verbose,maxnames=10]{biblatex} 
+\DeclareLanguageMapping{american}{american-apa}
 \addbibresource{abbrev.bib} 
 %\addbibresource[location=remote]{http://www.vilhuber.com/lars/wp-content/papercite-data/bib/self.bib} 
 \addbibresource{self.bib}
@@ -176,20 +183,18 @@ Toronto, Canada. \\[-.8cm]
 \\
 \multicolumn{2}{l}{\bf (c)(i) Closely related :}\\
 %------------------------------------------------------------
-1.  &\fullcite{RePEc:cen:wpaper:17-59r}\\
-2.  &\fullcite{chance:2017}\\
-3.  &\fullcite{HaneySIGMOD2017}\\
-4.  &\fullcite{MirandaVilhuber:Using:SJIAOS:2016}\\
+1.  &\fullcite{chance:2017}\\
 5.  &\fullcite{LagozeEtAl2013b}\\
 
 %------------------------------------------------------------
 \\
 \multicolumn{2}{l}{\bf (c)(ii) Other significant :}\\
-1. &\fullcite{McKinneyEtAl:submitted:2017}\\
-2. &\fullcite{VilhuberAbowdReiter:Synthetic:SJIAOS:2016}\\
+1.  &\fullcite{RePEc:cen:wpaper:17-59r}\\
+2. &\fullcite{McKinneyEtAl:submitted:2017}\\
+3.  &\fullcite{HaneySIGMOD2017}\\
+4. &\fullcite{VilhuberAbowdReiter:Synthetic:SJIAOS:2016}\\
 %3. &\fullcite{SJIAOS-2014b}\\
-%4. &\fullcite{Chance2011} \\
-3. & \fullcite{AbowdVilhuber2012}\\
+%3. & \fullcite{AbowdVilhuber2012}\\
 4. &\fullcite{AbowdVilhuber2010}\\
 %
 5. & \fullcite{AbowdEtAl2009}\\
