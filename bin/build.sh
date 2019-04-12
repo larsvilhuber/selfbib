@@ -6,10 +6,10 @@ DOCS="cv-vilhuber"
 cd $(dirname $0)/$MYDIR
 for arg in $DOCS
 do
-    rm ${arg}.aux
-    pdflatex $arg
-    biber $arg
-    pdflatex $arg
+    [[ -f ${arg}.aux ]] && rm ${arg}.aux
+    pdflatex $arg || true
+    biber $arg || true
+    pdflatex $arg || true
     pdflatex $arg
 done
 
