@@ -1,0 +1,42 @@
+
+sudo: required
+
+services:
+  - docker                  
+
+# safelist
+branches:
+  only:
+  - master
+  
+  
+before_install:            
+  - docker pull adnrv/texlive:custom
+  - chmod +x bin/*sh
+
+script:
+  - docker run  -v $TRAVIS_BUILD_DIR:/documents/  --name latex adnrv/texlive:custom  /documents/bin/upgrade.sh
+  - docker container restart latex 
+  - docker container exec latex /documents/bin/build.sh 
+
+after_error: 
+  - docker logs latex
+
+after_failure:
+  - docker logs latex
+
+after_success:
+- echo "${SFTP_KEY}" | base64 --decode >/tmp/sftp_rsa
+- bin/sync-up.sh
+- git commit -m 'Updated files by bot' -a
+
+
+deploy:
+  - provider: pages
+    skip-cleanup: true
+    github-token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
+    keep-history: true
+    target-branch: test
+    verbose: true
+    on:
+      branch: master
