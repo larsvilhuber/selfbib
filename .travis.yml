@@ -15,6 +15,8 @@ before_install:
   - chmod +x bin/*sh
 
 script:
+  - echo $TRAVIS_BUILD_DIR
+  - ls $TRAVIS_BUILD_DIR/bin/
   - docker run  -v $TRAVIS_BUILD_DIR:/documents/  --name latex adnrv/texlive:custom  /documents/bin/upgrade.sh
   - docker container restart latex 
   - docker container exec latex /documents/bin/build.sh 
