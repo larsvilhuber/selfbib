@@ -10,23 +10,23 @@ branches:
   - master
   
   
-#before_install:            
-#  - docker pull adnrv/texlive:custom
-#  - chmod +x bin/*sh
+before_install:            
+  - docker pull adnrv/texlive:custom
+  - chmod +x bin/*sh
 
-#script:
-#  - echo $TRAVIS_BUILD_DIR
-#  - ls $TRAVIS_BUILD_DIR/bin/
-#  - docker run  -v $TRAVIS_BUILD_DIR:/documents/  --name latex adnrv/texlive:custom  /documents/bin/build.sh
-
-#after_error: 
-#  - docker logs latex
-
-#after_failure:
-#  - docker logs latex
-
-#after_success:
 script:
+  - echo $TRAVIS_BUILD_DIR
+  - ls $TRAVIS_BUILD_DIR/bin/
+  - docker run  -v $TRAVIS_BUILD_DIR:/documents/  --name latex adnrv/texlive:custom  /documents/bin/build.sh
+
+after_error: 
+  - docker logs latex
+
+after_failure:
+  - docker logs latex
+
+after_success:
+#script:
 - echo "${SFTP_KEY}" | base64 --decode >/tmp/sftp_rsa
 - chmod 0600 /tmp/sftp_rsa
 - git checkout -b commitme
