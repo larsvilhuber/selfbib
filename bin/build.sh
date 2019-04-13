@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# update packages
+$(dirname $0)/update.sh
+
 MYDIR=../web/bib
 DOCS="cv-vilhuber"
 
