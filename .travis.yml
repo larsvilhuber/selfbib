@@ -27,6 +27,7 @@ after_failure:
 
 after_success:
 - echo "${SFTP_KEY}" | base64 --decode >/tmp/sftp_rsa
+- chmod 0600 /tmp/sftp_rsa
 - bin/sync-up.sh
 - git commit -m 'Updated files by bot' -a
 
