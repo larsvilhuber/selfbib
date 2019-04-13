@@ -10,26 +10,30 @@ branches:
   - master
   
   
-before_install:            
-  - docker pull adnrv/texlive:custom
-  - chmod +x bin/*sh
+#before_install:            
+#  - docker pull adnrv/texlive:custom
+#  - chmod +x bin/*sh
 
+#script:
+#  - echo $TRAVIS_BUILD_DIR
+#  - ls $TRAVIS_BUILD_DIR/bin/
+#  - docker run  -v $TRAVIS_BUILD_DIR:/documents/  --name latex adnrv/texlive:custom  /documents/bin/build.sh
+
+#after_error: 
+#  - docker logs latex
+
+#after_failure:
+#  - docker logs latex
+
+#after_success:
 script:
-  - echo $TRAVIS_BUILD_DIR
-  - ls $TRAVIS_BUILD_DIR/bin/
-  - docker run  -v $TRAVIS_BUILD_DIR:/documents/  --name latex adnrv/texlive:custom  /documents/bin/build.sh
-
-after_error: 
-  - docker logs latex
-
-after_failure:
-  - docker logs latex
-
-after_success:
 - echo "${SFTP_KEY}" | base64 --decode >/tmp/sftp_rsa
 - chmod 0600 /tmp/sftp_rsa
 - bin/sync-up.sh
 - git commit -m 'Updated files by bot' -a
+- git checkout -b commitme
+- git status
+- git push  "https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}" commitme:master
 
 
 deploy:
@@ -40,4 +44,4 @@ deploy:
     target-branch: test
     verbose: true
     on:
-      branch: master
+      branch: deploy
