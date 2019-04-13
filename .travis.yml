@@ -31,7 +31,7 @@ after_success:
 - chmod 0600 /tmp/sftp_rsa
 - git checkout -b commitme
 - git status
-- git commit -m 'Updated files by bot' -a
+- git commit -m '[skip travis] Updated files by bot' -a
 - git push  "https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}" commitme:master
 - bin/sync-up.sh
 
