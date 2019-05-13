@@ -1,0 +1,424 @@
+% !TeX TXS-program:bibliography = txs:///biber
+%%% -*- latex -*- 
+%%%
+%%% cv-vilhuber.tex
+%%% Time-stamp: <11/07/04 08:11:42 vilhuber>
+%%% $Id: cv-vilhuber.tex 2918 2018-03-03 21:58:22Z lv39 $
+%%% $URL: https://forge.cornell.edu/svn/repos/proposals/general/cv-vilhuber.tex $
+%%%
+\documentclass[10pt,letterpaper]{report}
+\newcommand{\mytitle}{Lars Vilhuber}
+\newcommand{\myversion}{\today}
+
+%\usepackage{pstricks}
+%\usepackage{color}
+\usepackage[usenames]{xcolor}
+\usepackage{fancyhdr}   % provides pagestyle fancy
+\definecolor{myred}{rgb}{1 .1 0}
+\definecolor{myblue}{rgb}{0,.1,1}
+\definecolor{cornellred}{rgb}{0.7,.11,.11}
+\usepackage{fullpage}
+\usepackage{hyperref}
+\hypersetup{ %
+	plainpages,%
+	colorlinks,%
+	linkcolor=cornellred,
+	urlcolor=cornellred,
+	filecolor=blue,
+	citecolor=blue,
+	breaklinks,
+	pdftitle={\mytitle},%
+	pdfpagemode=None,%UseOutlines
+	pdfauthor={\mytitle},%
+	pdfsubject={Curriculum Vitae}%
+}
+\usepackage{newcent}
+\usepackage{longtable}
+%\usepackage{t1enc}
+\pagestyle{fancy}
+
+% % % % % % % % BIBLATEX
+\usepackage{csquotes}
+\usepackage[backend=biber,sortcites,sorting=ydnt,maxbibnames=20]{biblatex-chicago}
+\addbibresource{abbrev.bib}
+\addbibresource{self.bib}
+
+% Clear some stuff from the bibliography
+\AtEveryBibitem{%
+	\clearfield{day}%
+	\clearfield{month}%
+	\clearfield{endday}%
+	\clearfield{endmonth}%
+	\clearlist{language}%
+	\clearfield{issn}%
+	\clearfield{eprint}% - adjust if necessary
+	\iffieldundef{doi}{}{\clearfield{url}}% remove URL field if DOI present    
+}
+
+%\addbibresource[location=remote]{http://www.vilhuber.com/lars/wp-content/papercite-data/bib/self.bib}
+
+% % % % % % % % Layout
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\setlength{\headsep}{18pt}
+\newcommand{\otherpages}{%
+\fancyhead[LO,RE]{{\small \it  Curriculum Vitae}}
+\fancyhead[RO,LE]{{\small \it \mytitle}}
+\fancyfoot[RO,LE]{Page \thepage }
+\fancyfoot[CO,CE]{\ \ }
+%\fancyfoot[RO,LE]
+%{\tiny Latest version at \href{http://www.cloutier-vilhuber.net/Lars/cv-vilhuber.pdf}{http://www.cloutier-vilhuber.net/Lars/cv-vilhuber.pdf}}
+}
+\otherpages
+%\pagestyle{myheadings}
+%\markboth{\myversion}{\mytitle}
+
+%\thispagestyle{empty} 
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+  \large \bf Lars VILHUBER\\
+  \large \bf \href{https://lars.vilhuber.com/lars/academia/cv}{CURRICULUM VITAE}\\
+\small Version: \myversion
+\end{center}
+
+
+\begin{longtable}{rp{5in}}
+%\ \ \ \ \ \ \ \\
+%\multicolumn{2}{l}{\it \bf Profession : }\\
+%&  Economist. \\
+%\\
+\multicolumn{2}{l}{\it \bf Contact:}\\
+&  
+\begin{tabular}{lp{4in}}
+Email: &\href{mailto:lars.vilhuber@cornell.edu}{lars.vilhuber@cornell.edu}\\
+Phone: &607-330-5743\\
+Web page:&  \url{https://www.vilhuber.com/lars/}\\
+RePEc ID:& \href{https://ideas.repec.org/e/pvi26.html}{pvi26}\\
+ORCID ID:& \href{https://orcid.org/0000-0001-5733-8932}{0000-0001-5733-8932}\\
+Github   & \url{https://github.com/larsvilhuber}\\
+\end{tabular}
+\\
+%\multicolumn{2}{l}{\it \bf Citizenship :}\\
+%& U.S. and German citizenship, Canadian permanent residency. \\
+%\\
+\multicolumn{2}{l}{\it \bf Research interests :}\\
+&  Effect of labor market conditions on remuneration; 
+%   training and mobility; 
+%   work sharing,  
+   labor market effects of displacement;
+   low wage labor market;
+   comparative labor market studies,
+   applied econometrics;
+   statistical editing technologies;
+   statistical name matching procedures;
+   privacy and confidentiality.
+   \\
+%\\  
+\multicolumn{2}{l}{\it \bf Professional activities :}\\
+&  
+\begin{tabular}{p{0.75in}p{4in}}
+\multicolumn{2}{l}{\ \it \underline{Current}}\\
+2018-    &Data Editor, \href{https://aeaweb.org}{American Economic Association}\\ %[.3cm]
+2011-    &Executive Director, \href{http://www.ilr.cornell.edu/ldi}{Labor Dynamics Institute}, 
+Cornell University\\ %[.3cm]
+2011-    &Affiliated faculty, \href{http://economics.cornell.edu}{Department of Economics}, 
+Cornell University\\ %[.3cm]
+2016-    &Senior Research Associate (IPA),
+\href{https://www.ces.census.gov}{Center for Economic Studies} and \href{https://lehd.ces.census.gov}{LEHD Program} at the
+\href{https://www.census.gov}{U.S. Census Bureau}, Washington D.C., USA 
+%(Contact: \href{mailto:ron.s.jarmin@census.gov}{Ron S. Jarmin})
+\\ %[.3cm]
+2007-    & Economist, Senior Research Associate 
+\href{http://www.ilr.cornell.edu}{ILR School} at Cornell University, Ithaca,
+NY, USA 
+%(Contact: \href{mailto:john_abowd@cornell.edu}{John M. Abowd})
+\\%[.3cm]
+2007-    & Vice-President,
+\href{https://www.aces-research.com}{ACES-Research, LLC}, Ithaca,
+NY, USA\\[.3cm]
+\multicolumn{2}{l}{\ \it \underline{Government}}\\
+2004-2016  &Senior Research Associate (IPA, research contracts),
+\href{https://www.ces.census.gov}{Center for Economic Studies} and 
+\href{https://lehd.ces.census.gov}{LEHD Program} at the
+\href{https://www.census.gov}{U.S. Census Bureau}, Washington D.C., USA 
+%(Contact: \href{mailto:ron.s.jarmin@census.gov}{Ron S. Jarmin})
+\\ %[.3cm]
+2001-2002    &Economist (Consultant), \href{https://lehd.ces.census.gov}{LEHD Program} at the
+\href{https://www.census.gov}{U.S. Census Bureau}, Washington D.C., USA 
+%(Contact: \href{mailto:chester.e.bowie@census.gov}{Chet Bowie})
+\\%[.3cm]
+1999-2001    &Economist, U.S. Census Bureau, Longitudinal
+Employer-Household Dynamics (\href{https://lehd.ces.census.gov}{LEHD}) Program 
+%(Contact: \href{mailto:ronald.c.prevost@census.gov}{Ronald C. Prevost})
+\\%[.3cm]
+1998-2000    &Economic consultant to
+\href{http://www.hrdc-drhc.gc.ca/}{Human Resources Development Canada}
+%(Contact: Ging Wong)
+\\[.3cm]
+
+\multicolumn{2}{l}{\ \it \underline{Academia}}\\
+%
+% Cornell
+%
+\multicolumn{2}{l}{\ \it Cornell Institute for Social and Economic
+  Research (CISER), Cornell University, USA}\\
+2004-2007    & Economist, Senior Research Associate 
+\href{http://www.ciser.cornell.edu}{CISER} at Cornell University, Ithaca,
+NY, USA 
+%(Contact: \href{mailto:john_abowd@cornell.edu}{John M. Abowd})
+\\%[.3cm]
+2001-2004    & Economist (Consultant), 
+\href{http://www.ciser.cornell.edu}{CISER} at Cornell University, Ithaca,
+NY, USA 
+%(Contact: \href{mailto:john_abowd@cornell.edu}{John M. Abowd})
+\\[.3cm]
+
+
+\multicolumn{2}{l}{\ \it Dept. of Economics, York University, Canada}\\
+1999-2002    &Adjunct Professor, \href{http://econ.yorku.ca}{York University}, Toronto, Canada\\
+1998-1999       &Research Fellow, co-responsible for COEP 1996 data administration and dissemination. \\
+
+%Winter 1998     &Instructor, Econ 3210 ``Use of Economic Data''
+%(Introductory Econometrics), at Department of Economics, York University. 
+%%Evaluation available.
+%\\[.3cm]
+%
+%\multicolumn{2}{l}{\ \it Dept. of Economics, Universit\'e de Montr\'eal}\\
+%
+%Autumn 1997     &Instructor, ECN 3500 ``Labor Economics'' (undergraduate level, jointly
+%with Thomas Lemieux), at 
+%  \href{http://http://www.sceco.umontreal.ca/}{D\'epartement} 
+%  \href{http://http://www.sceco.umontreal.ca/}{de Sciences \'Economiques}, Universit\'e de
+%Montr\'eal. 
+%%Evaluation available. 
+%\\
+%
+%Autumn 1996     &Instructor, ECN 3500 ``Labor Economics'' (undergraduate level).
+%%Evaluation available. 
+%\\
+%
+%1993-1997       &Research Assistant: Thomas Lemieux (1997), David Margolis (1995-1997),
+%Jacques Robert (1992-1995) and Leonard Dudley (1993), all Universit\'e de
+%Montr\'eal, and Michael Huberman, CIRANO, Montr\'eal, 1996. \\
+
+%1993-1996       &Various teaching assistantships, undergraduate and
+%graduate micro economics.\\
+%, ECN 2011, 2nd year undergrad micro, to Michel Poitevin\\
+%1994        &Teaching Assistant, ECN 6023, ``Ph.D. Micro'', to Yves Sprumont.\\
+%
+%1993        &Teaching Assistant, ECN 2012, 2nd year undergrad micro, to Jacques Robert\\
+%\\[.3cm]
+%\multicolumn{2}{l}{\ \it Other }\\
+%
+%1991-1992     &  InterNationes, Bonn (Germany)
+%Host to international journalists on official visits to
+%Germany, contracts to the German Foreign Office.\\
+%
+%
+%Summer 1991   &  BASF P \& E, S.A. (France)
+%Translator German to French of technical documents.\\
+%
+%
+%Summer 1991   &  Deutsche Bank AG, Ludwigshafen (Germany, 1986-1988):
+%Apprenticeship as bank clerk\\
+\end{tabular}
+\\
+\end{longtable}
+\newpage
+\otherpages
+\nocite{*}
+%\multicolumn{2}{l}
+\defbibfilter{collective}{
+	type=incollection or
+	type=inproceedings
+}
+
+\paragraph{\it \bf Referreed Publications :}%\\
+\printbibliography[type=article,heading=none]
+\paragraph{\it \bf Proceedings :}%\\
+\printbibliography[filter=collective,heading=none]
+\paragraph{\it \bf Book chapters:}%\\
+%\printbibliography[type=book,heading=none]
+\printbibliography[type=inbook,heading=none]
+%\paragraph{\it \bf Working papers and other documents:}%\\
+%\printbibliography[type=report,heading=none]
+%\paragraph{\it \bf Online resources:}%\\
+%\printbibliography[type=online,heading=none]
+
+%In addition to the list provided here, interested readers might want to consult
+%\begin{itemize}
+%\item \href{http://ideas.repec.org/e/pvi26.html}{my RePEc site}
+%\item \href{http://ecommons.library.cornell.edu/handle/1813/30503}{our NCRN-Cornell 
+%eCommons collection}
+%\item \href{http://www.ilr.cornell.edu/LDI/documents/index.html}{documents issued by our 
+%Labor Dynamics Institute}
+%\item \href{http://ideas.repec.org/s/cen/wpaper.html}{the Center for Economic Studies Working 
+%Paper series}
+%\end{itemize}
+
+
+
+
+
+
+
+%\multicolumn{2}{l}
+\paragraph{\it \bf Fellowships and Grants:}
+%In addition to the list below, the 
+%\href{http://orcid.org/0000-0001-5733-8932}{public ORCID} will also yield these and maybe other results.
+%\subparagraph{Active grants}
+%\begin{enumerate}
+%	\item Alfred P. Sloan Foundation: ``To improve policy-relevant research by facilitating the use of administrative data among economists who design, run, and analyze randomized controlled trials'', to the Abdul Latif Jameel Poverty Action	Lab (J-PAL), Massachusetts Institute	of Technology (MIT), Anja Sautmann (MIT, PI), Shawn Cole (Harvard Business School, co-PI), Iqbal Dhaliwal (MIT, co-PI), and Lars Vilhuber (Cornell, co-PI) (G‐2019-11391) \$1,083,750, 2019 --- 2021.
+%	\item Alfred P. Sloan Foundation: ``To enhance the transparency, reproducibility, and replicability of empirical research in the social sciences'', Principal Investigator  (\href{https://sloan.org/grant-detail/8801}{G-2018-11377})  \$50,000.00, 2019 --- 2020.
+%	\item Pierce Memorial Fund (Cornell University, ILR School), ``To help fund a two-day conference on questions in the area of linked employer-employee models'', \$10,000.00, 2019.
+%\end{enumerate}
+%
+%
+%\subparagraph{Completed grant work}
+%\begin{enumerate}
+%\item Alfred P. Sloan Foundation: ``The Economics of Socially-Efficient Privacy and Confidentiality Management for Statistical Agencies'', co-Principal Investigator, with John Abowd (PI), Ian Schmutte (University of Georgia, co-PI) (\href{https://sloan.org/grant-detail/6845}{G‐2015‐13903}) \$535,970.00, 2015-04-01 --- 2019-03-31. Final report pending.
+%
+%\item National Science Foundation: ``NCRN-MN: Cornell Census-NSF Research Node: Integrated Research Support, Training and Data Documentation'', Principal Investigator, with John Abowd (former PI), William Block (co-PI), Ping Li (co-PI) (NSF \href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1131848}{SES-1131848}) \$3,560,887.00, 2011-11-01 --- 2018-09-30. For outcomes report, see  \href{https://ncrncornell.github.io/reports/outcomes-report.html}{online version} and \cite{VilhuberBlock2019}.
+%
+%\item National Science Foundation: ``RCN: Coordination of the NSF-Census Research Network'', 
+%Principal Investigator, with Alan Karr (NISS/RTI, co-PI and former PI), John Abowd (former co-PI), Maggie Levenstein (University of Michigan, co-PI), and 
+%Jerome Reiter (Duke, 
+%co-PI) (NSF \href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1237602}{SES-1237602}/\href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=1507241}{1507241}) \$748,577.00, 2012-07-15 --- 2018-06-30. For outcomes report, see \cite{ncrn-summary}.
+%
+%\item National Science Foundation: ``Synthetic Data User Testing and Dissemination,'' Principal Investigator, joint with John Abowd. (NSF \href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1042181}{SES-1042181}) \$193,693.00, 2010-09-15 --- 2015-08-31
+%
+%\item National Science Foundation: ``Joint NSF-Census-IRS Workshop on
+%  synthetic data and confidentiality protection,'' Principal Investigator, joint with John Abowd,
+%  Ron Jarmin, and Jerry Reiter. (NSF \href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=6866420}{SES-6866420}) \$18,480.00, 2009-07-31
+%
+%\item National Science Foundation: ``Social Science Gateway to TeraGrid,''
+%Principal Investigator,  joint with John Abowd (NSF \href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0922005}{SES-0922005}) \$393,523,  2009-07-01 --- 2013-06-30
+%
+%\item National Science Foundation: ``The economics of mass layoffs:
+%  displaced workers, displacing firms, and causes and consequences,''
+%  Principal Investigator, joint
+%  with John Abowd (NSF \href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=082034}{SES-0820349}) \$245,950,  10/01/2008-09/30/2013.
+%
+%\item National Science Foundation (Washington, D.C.),  ``Info
+%  Tech Challenges for Secure Access to Confidential Social Science Data'',
+%  awarded September 2004; as Senior Researcher. Principal Investigator is John Abowd, Cornell
+%  University.   \href{http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0427889}{Award \#0427889}.
+%%\item Social Sciences and Humanities Research Council of Canada (SSHRC), Initiative
+%%  for the New Economy (INE), Collaborative Research Initiative, 2002,
+%%  ``Comment la nouvelle \'economie financi\`ere affecte la relation employeur-employ\'e'' (as Collaborator,
+%%  Principal Investigator is Georges Dionne, HEC, co-authoring Co-applicant
+%%  is Beno\^it Dostie). \href{http://www.hec.ca/gestiondesrisques/ine.PDF}{Approved}. 
+%%\item Social Sciences and Humanities Research Council of Canada (SSHRC), Initiative
+%%  for the New Economy (INE) Research Grant 2001, ``Labour market effects
+%%  surrounding worker displacement in Canada and the US: a search-theoretic
+%%  approach'' (as Principal Investigator. Co-applicant is Audra Bowlus,
+%%  collaborator is  David Margolis). Approved, but not funded.
+%%\item Best paper, 2000 Fourth International Conference
+%%  of the German Socio-Economic Panel Study Users, Berlin, Germany, for ``Early Career Experiences and Later Career Outcomes: Comparing the
+%%  United States, France and Germany''
+%%  \item CIRANO grants (1994, 1995, 1996)
+%%  \item Department of Economics, Universit\'e de Montr\'eal honors grant
+%%  (1993-1995) 
+%%  \item Studienstiftung des Deutschen Volkes (Germany, 1990-1995)
+%\end{enumerate}
+
+\paragraph{\it \bf Appointments and other activities :}%\\
+\subparagraph{Editorial activities}
+\begin{enumerate}
+	\item Managing Editor of the Journal of Privacy and Confidentiality, 2017-\newline (\url{http://www.journalprivacyconfidentiality.org})
+	\item Associate Editor of the Harvard Data Science Review, 2019-\newline (\url{https://review.datascience.harvard.edu/})
+	\item Data Editor for the American Economic Association, 2018- \newline (\url{https://aeaweb.org})
+	\item LEHD Technical Papers, 2000-2007 \newline (\url{https://ideas.repec.org/s/cen/tpaper.html})
+\end{enumerate}
+%\begin{enumerate}
+%\subparagraph{ Referee for:}
+%  ACM   Transactions on Knowledge Discovery in Data, 
+%  American Economic Journal: Applied Economics,
+%  Canadian Journal of Economics, 
+%  European Economic Review,  
+%  Econometric Reviews, 
+%  Economic Journal,  
+%  Industrial Relations, 
+%  Journal of Applied Economics, 
+%  Journal of Business and Economic Statistics,  
+%  Journal of the European Economic Association,
+%  Journal of Labor   Economics, 
+%  Journal of Official Statistics,
+%  National Science Foundation,
+%  Review of Development Economics, 
+%  Review of Economics and Statistics,
+%  Sloan Foundation,
+%  Statistics Canada,
+\subparagraph{Committees and Panels} 
+\begin{itemize}
+\item[] \textit{Current:}
+\item Contribution to activities of the National Academies of Science, Engineering, and Medicine:
+\begin{itemize}
+	\item \href{https://www8.nationalacademies.org/pa/projectview.aspx?key=51436}{Forecasting Costs for Preserving, Archiving, and Promoting Access to Biomedical Data} (DEPS-BMSA-18-02)
+	\item \href{https://www8.nationalacademies.org/pa/projectview.aspx?key=51187}{Transparency and Reproducibility of Federal Statistics for the National Center for Science and Engineering Statistics} (DBASSE-CNSTAT-17-04)
+\end{itemize} 
+\item Member of the Board of Directors of the Canadian Research Data Centre Network/ R\'eseau canadien des Centres de donn\'ees de recherche, 2019- (\url{https://crdcn.org/})
+\item American Statistical Association, Committee on Privacy and Confidentiality, member 2016- (\url{http://community.amstat.org/cpc/home})
+\item Comit\'e scientifique du Centre d'acc\`es s\'ecuris\'e aux 
+donn\'ees (CASD), member 2012-2014, chair 2014- (\url{https://casd.eu/}) [Scientific advisory board of the Center for secure data 
+access, France].
+\item Conseil d'orientation du Centre interuniversitaire 
+qu\'eb\'ecois de statistiques sociales (CIQSS)/ Advisory board of the Quebec Inter-University 
+Centre for Social Statistics (QICSS) [Canada], member, 2014-.
+\item[] \textit{Completed:}
+\item Social Sciences and Humanities Research Council of Canada (SSHRC), Adjudication Committee for Partnership Grants, member 2018-2019.
+\item Contribution to the following activities at the Committee on National Statistics (CNSTAT) of the National Academies of Science, Engineering, and Medicine:
+\begin{itemize}
+	\item ``\href{https://www8.nationalacademies.org/pa/projectview.aspx?key=49809}{Workshop on Transparency and Reproducibility in Federal Statistics}'' (DBASSE-CNSTAT-16-02, presentation in June 2017, workshop report see \cite{NAP25305})
+	\item ``\href{https://www8.nationalacademies.org/pa/projectview.aspx?key=49906}{Committee on Reproducibility and Replicability in Science}'' ()DBASSE-BBCSS-17-03, white paper prepared July 2018, final report pending 2019)
+\end{itemize}
+\item National Science Foundation, Methodology, Measurement, and Statistics (MMS) Advisory Panel, member 2016-2018.
+\item International Data Service Centre, IZA Institute of Labor Economics, Advisory Board, member 2016.
+\end{itemize}
+%\end{enumerate}
+
+%\newpage
+  
+%\begin{longtable}{rp{5in}}
+%\ \ \ \ \ \ \ \\
+\paragraph{\it \bf Education :}
+\ \\
+\begin{tabular}{lp{4in}}
+\it Dissertation (1998): \\
+\ Title :&``Trois essais sur la mobilit\'e et la formation des travailleurs en Allemagne et aux
+\'Etats-Unis'' (Three essays on worker mobility and worker training in
+Germany and the US)\\
+%\ Supervisors : &\href{mailto:margolis@univ-paris1.fr}{David N. MARGOLIS} 
+%                  and \href{mailto:tlemieux@interchange.ubc.ca}{Thomas LEMIEUX}\\
+%\ Date : & December 1998\\
+%\ Specialization : &Labor Economics, Applied Econometrics \\
+\\
+1998-1999   &    York University (Canada): Post-doctoral fellow \\
+1993-1998   &    Universit\'e de Montr\'eal (Canada): Ph.D. in Economics. \\
+1992-1993   &    Universit\'e de Montr\'eal (Canada): M.Sc. in Economics, 1993 \\
+1991-1992   &    Universit\"at Bonn (Germany): Graduate studies and Undergraduate studies in Economics, partial exams towards Diplom.     \\
+1990-1991   &    FernUniversit\"at Hagen (Germany): Undergraduate studies in Economics towards Vordiplom. \\
+\end{tabular}
+
+\paragraph{\it \bf Languages :}
+\ \\
+German, English, French, Portuguese, Spanish. 
+
+%\newpage
+%\paragraph{\it \bf References:}
+%\begin{enumerate}
+%\item John M. ABOWD, Cornell University, Ithaca, NY, USA, \\
+%   \href{mailto:john_abowd@cornell.edu}{john\_abowd@cornell.edu}, +1.607.255.4801
+% \end{enumerate}
+
+
+
+ \end{document}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% TeX-master: t
+%%% End: 
