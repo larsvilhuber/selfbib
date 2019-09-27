@@ -16,3 +16,6 @@ web/pdf/vilhuber-biblio-latest.toc
 *.out
 *.xml
 *.gz
+*.fdb_latexmk
+*.fls
+*.synctex(busy)
