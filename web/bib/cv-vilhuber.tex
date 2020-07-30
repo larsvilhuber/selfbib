@@ -42,6 +42,7 @@
 \usepackage[backend=biber,sortcites,sorting=ydnt,maxbibnames=20]{biblatex-chicago}
 \addbibresource{abbrev.bib}
 \addbibresource{self.bib}
+\addbibresource{data.bib}
 
 % Clear some stuff from the bibliography
 \AtEveryBibitem{%
@@ -243,6 +244,8 @@ NY, USA
 \printbibliography[type=inbook,heading=none]
 \paragraph{\it \bf Working papers and other documents:}%\\
 \printbibliography[type=report,heading=none]
+\paragraph{\it \bf Data:}%\\
+\printbibliography[type=dataset,heading=none]
 \paragraph{\it \bf Online resources:}%\\
 \printbibliography[type=online,heading=none]
 
