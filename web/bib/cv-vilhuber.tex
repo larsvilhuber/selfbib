@@ -44,6 +44,11 @@
 \addbibresource{self.bib}
 \addbibresource{data.bib}
 
+\DeclareBibliographyCategory{dataset}
+\addtocategory{dataset}{AbowdVilhuber_NQWIDATA}
+\addtocategory{dataset}{lange_fabian_2020_3966534}
+\addtocategory{dataset}{foote_andrew_d_2020_4072428}
+
 % Clear some stuff from the bibliography
 \AtEveryBibitem{%
 	\clearfield{day}%
@@ -235,17 +240,21 @@ NY, USA
 	type=inproceedings
 }
 
+\defbibfilter{books}{
+	type=book or
+	type=inbook
+}
+
 \paragraph{\it \bf Referreed Publications :}%\\
 \printbibliography[type=article,heading=none]
 \paragraph{\it \bf Proceedings :}%\\
 \printbibliography[filter=collective,heading=none]
-\paragraph{\it \bf Book chapters:}%\\
-%\printbibliography[type=book,heading=none]
-\printbibliography[type=inbook,heading=none]
-\paragraph{\it \bf Working papers and other documents:}%\\
-\printbibliography[type=report,heading=none]
+\paragraph{\it \bf Books or book chapters:}%\\
+\printbibliography[filter=books,heading=none]
 \paragraph{\it \bf Data:}%\\
-\printbibliography[type=dataset,heading=none]
+\printbibliography[category=dataset,heading=none]
+\paragraph{\it \bf Working papers and other documents:}%\\
+\printbibliography[notcategory=dataset,type=report,heading=none]
 \paragraph{\it \bf Online resources:}%\\
 \printbibliography[type=online,heading=none]
 
