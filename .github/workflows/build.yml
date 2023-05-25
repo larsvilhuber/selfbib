@@ -29,6 +29,19 @@ jobs:
           publish_branch: draft
           keep_files: true
 
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: New CV prepared
+          title: A new CV has been prepared
+          body: |
+            Successful compilation of CV
+
+          branch: draft  # Replace with your branch name
+          branch-suffix: timestamp  # Optional: Add a timestamp to the branch name
+
+
       - name: Push CV
         run: |
           echo "${{ secrets.SFTP_KEY }}"  >/tmp/sftp_rsa
