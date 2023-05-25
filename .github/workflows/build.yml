@@ -22,11 +22,16 @@ jobs:
           args: "/github/workspace/bin/build.sh"
 
       - name: Commit back
+        uses: peaceiris/actions-gh-pages@v3.6.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: master
+
+      - name: Push CV
         run: |
           echo "${{ secrets.SFTP_KEY }}"  >/tmp/sftp_rsa
           chmod 0600 /tmp/sftp_rsa
-          git commit -m '[skip CI] Updated files by bot' -a
-          git push 
           bin/sync-up.sh
 
   
