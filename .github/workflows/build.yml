@@ -9,26 +9,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    services:
-      - docker
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
-      - name: Pull Docker image
-        run: docker pull adnrv/texlive:full
 
       - name: Set executable permissions
         run: chmod +x bin/*sh
 
       - name: Build LaTeX document
-        run: |
-          docker run -v ${{ github.workspace }}:/documents/ --name latex adnrv/texlive:full /documents/bin/build.sh
-
-      - name: Show Docker logs on error or failure
-        if: ${{ job.status != 'success' }}
-        run: docker logs latex
+        uses: docker://adnrv/texlive:full
+        with:
+          args: "-v ${{ github.workspace }}:/documents/ /documents/bin/build.sh"
 
       - name: Commit back
         run: |
