@@ -19,11 +19,11 @@ jobs:
       - name: Build LaTeX document
         uses: docker://adnrv/texlive:full
         with:
-          args: "-v ${{ github.workspace }}:/documents/ /documents/bin/build.sh"
+          args: "/github/workspace/bin/build.sh"
 
       - name: Commit back
         run: |
-          echo "${{ secrets.SFTP_KEY }}" | base64 --decode >/tmp/sftp_rsa
+          echo "${{ secrets.SFTP_KEY }}"  >/tmp/sftp_rsa
           chmod 0600 /tmp/sftp_rsa
           git commit -m '[skip CI] Updated files by bot' -a
           git push 
