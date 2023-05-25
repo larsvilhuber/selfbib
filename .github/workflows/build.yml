@@ -1,0 +1,41 @@
+name: Build CV
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    services:
+      - docker
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Pull Docker image
+        run: docker pull adnrv/texlive:full
+
+      - name: Set executable permissions
+        run: chmod +x bin/*sh
+
+      - name: Build LaTeX document
+        run: |
+          docker run -v ${{ github.workspace }}:/documents/ --name latex adnrv/texlive:full /documents/bin/build.sh
+
+      - name: Show Docker logs on error or failure
+        if: ${{ job.status != 'success' }}
+        run: docker logs latex
+
+      - name: Commit back
+        run: |
+          echo "${{ secrets.SFTP_KEY }}" | base64 --decode >/tmp/sftp_rsa
+          chmod 0600 /tmp/sftp_rsa
+          git commit -m '[skip CI] Updated files by bot' -a
+          git push 
+          bin/sync-up.sh
+
+  
