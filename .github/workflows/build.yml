@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set executable permissions
         run: chmod +x bin/*sh
@@ -21,16 +21,16 @@ jobs:
         with:
           args: "/github/workspace/bin/build.sh"
 
-      - name: Commit back
-        uses: peaceiris/actions-gh-pages@v3.9.3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
-          publish_branch: draft
-          keep_files: true
+      # - name: Commit back
+      #   uses: peaceiris/actions-gh-pages@v3.9.3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: .
+      #     publish_branch: draft
+      #     keep_files: true
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: New CV prepared
