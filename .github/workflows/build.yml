@@ -33,7 +33,7 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: New CV prepared
+          commit-message: "[skip-ci] New CV prepared"
           title: A new CV has been prepared
           body: |
             Successful compilation of CV
