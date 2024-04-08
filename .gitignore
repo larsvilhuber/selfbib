@@ -19,3 +19,4 @@ web/pdf/vilhuber-biblio-latest.toc
 *.fdb_latexmk
 *.fls
 *.synctex(busy)
+web/bib/zotero.bib
