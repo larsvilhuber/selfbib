@@ -41,10 +41,4 @@ jobs:
           branch: draft  # Replace with your branch name
           branch-suffix: timestamp  # Optional: Add a timestamp to the branch name
 
-      - name: Push CV
-        run: |
-          echo "${{ secrets.SFTP_KEY }}"  >/tmp/sftp_rsa
-          chmod 0600 /tmp/sftp_rsa
-          bin/sync-up.sh
-
   
