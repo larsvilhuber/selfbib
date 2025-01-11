@@ -1,0 +1,27 @@
+name: Deploy CV after PR
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  if_merged:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run after PR merge
+        run: |
+          echo "Pull request #${{ github.event.pull_request.number }} was merged"
+      - name: Set executable permissions
+        run: chmod +x bin/*sh
+      - name: Push CV
+        run: |
+          echo "${{ secrets.SFTP_KEY }}"  >/tmp/sftp_rsa
+          chmod 0600 /tmp/sftp_rsa
+          bin/sync-up.sh
+
+  
