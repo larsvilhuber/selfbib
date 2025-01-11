@@ -41,10 +41,6 @@ jobs:
           branch: draft  # Replace with your branch name
           branch-suffix: timestamp  # Optional: Add a timestamp to the branch name
 
-  syncwebsite:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
       - name: Push CV
         run: |
           echo "${{ secrets.SFTP_KEY }}"  >/tmp/sftp_rsa
