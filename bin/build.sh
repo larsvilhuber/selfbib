@@ -4,7 +4,7 @@
 $(dirname $0)/update.sh
 
 MYDIR=../web/bib
-DOCS="cv-vilhuber cv-vilhuber-sshrc"
+DOCS="cv-vilhuber"
 
 # xelatex does not work
 cd $(dirname $0)/$MYDIR
